@@ -1,5 +1,5 @@
 import { Cards2Data } from "@/constants/index";
-import { CardHeader, CardContent, Card } from "./ui/card";
+import { CardContent, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
 import Link from "@/node_modules/next/link";
 
