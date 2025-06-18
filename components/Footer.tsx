@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Facebook, Instagram } from "lucide-react";
+// import { Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -44,49 +44,47 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+381659480700">
+              <a href="tel:+381601800700">
                 <p className="text-muted-foreground  hover:text-primary">
-                  Telefon: +38165 948 0700
+                  Telefon: +38160 1800 700
                 </p>
               </a>
             </div>
             <div>
-              <a href="mailto:sweetyivo@gmail.com" target={"_blank"}>
+              <a href="mailto:lazarsekulic.76@gmail.com" target={"_blank"}>
                 <p className="text-muted-foreground text-wrap  hover:text-primary">
-                  Email: slepsluzbapuric032@gmail.com
+                  Email: lazarsekulic.76@gmail.com
                 </p>
               </a>
             </div>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a
-                href="https://www.facebook.com/profile.php?id=61559770900567"
+              {/* <a
+                href=""
                 target={"_blank"}
                 className="text-muted-foreground hover:text-primary"
               >
                 <Facebook />
-              </a>
-              <a
-                href="https://www.instagram.com/puricslepanje/"
+              </a> */}
+              {/* <a
+                href=""
                 target={"_blank"}
                 className="text-muted-foreground hover:text-primary"
               >
                 <Instagram />
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
             <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              Šlep služba Purić 032
+              Šlep služba Laki Zvezdara
             </h3>
 
-            <p className=" font-bold ">
-              Na usluzi 24h dnevno 365 dana u godini
-            </p>
+            <p className=" font-bold ">Najbrži u gradu</p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
-          <p>&copy; 2025 Šlep služba Purić 032. Sva prava zadržana.</p>
+          <p>&copy; 2025 Šlep služba Laki. Sva prava zadržana.</p>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>

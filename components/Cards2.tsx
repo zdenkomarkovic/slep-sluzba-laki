@@ -1,6 +1,7 @@
 import { Cards2Data } from "@/constants/index";
 import { CardHeader, CardContent, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
+import Link from "@/node_modules/next/link";
 
 const Cards2 = ({ title, data }: { title: string; data: Cards2Data[] }) => {
   return (
@@ -12,9 +13,11 @@ const Cards2 = ({ title, data }: { title: string; data: Cards2Data[] }) => {
         <div className="grid md:grid-cols-3 text-center gap-6 md:gap-8 items-stretch">
           {data.map((item) => {
             return (
-              <MotionComponent1 key={item.id}>
-                <OneCard key={item.id} item={item} />;
-              </MotionComponent1>
+              <Link key={item.id} href={item.link}>
+                <MotionComponent1>
+                  <OneCard item={item} />
+                </MotionComponent1>
+              </Link>
             );
           })}
         </div>
@@ -30,13 +33,10 @@ const OneCard = ({ item }: { item: Cards2Data }) => {
 
   return (
     <Card className="h-full">
-      <CardHeader className=""></CardHeader>
-      <CardContent className="flex gap-5 items-center text-xl md:text-3xl justify-start">
-        <div className=" md:text-4xl text-primary ">
-          {" "}
-          <IconComponent className="text-4xl md:text-6xl" />
-        </div>
-        <p className="text-left">{item.title}</p>
+      <CardContent className="flex flex-col gap-1 items-center text-xl md:text-2xl text-center">
+        {" "}
+        <IconComponent className="text-4xl md:text-6xl text-primary" />
+        <p className="">{item.title}</p>
       </CardContent>
     </Card>
   );

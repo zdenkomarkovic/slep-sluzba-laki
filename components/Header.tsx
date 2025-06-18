@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../public/logo.jpg";
+import logo from "../public/tow-truck_18042919.png";
 import Link from "next/link";
 import { ChevronDownIcon, MenuIcon, PhoneIcon } from "lucide-react";
 
@@ -15,7 +15,7 @@ import {
 
 import { motion } from "framer-motion";
 import { Fragment, useEffect, useState } from "react";
-import { navList } from "@/constants/index";
+
 import {
   Accordion,
   AccordionItem,
@@ -23,6 +23,7 @@ import {
   AccordionContent,
 } from "./ui/accordion";
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
+import { navList } from "@/constants/index";
 
 const mobTitleStyles = "text-lg py-2";
 
@@ -158,23 +159,20 @@ export default function Header() {
           : "bg-transparent"
       }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
+      <nav className="flex items-center justify-between px-8 md:py-3 max-w-[80rem] w-full text-primary font-bold">
         <motion.div whileHover={{ scale: 1.1 }}>
           <Link href="/" className=" flex gap-3 items-center">
             <Image
               src={logo}
               alt="dm rustic 24"
-              width={50}
+              width={60}
               height={50}
               className="rounded-full aspect-square"
             />
-            <span className="hidden md:block text-primary text-2xl">
-              Šlep Purić
-            </span>
           </Link>
         </motion.div>
         <DesktopNav />
-        <Link href="tel:+381659480700">
+        <Link href="tel:+381601800700">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
@@ -183,7 +181,7 @@ export default function Header() {
             className=" items-center justify-center gap-3 rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
           >
             <PhoneIcon />
-            <p className="">0659480700</p>
+            <p className="">0601800700</p>
           </motion.button>
         </Link>
         <MobileMenu />

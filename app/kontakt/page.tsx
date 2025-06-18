@@ -4,7 +4,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendMail } from "@/lib/send-mail";
 import { toast } from "sonner";
-import { FaInstagram } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaViber } from "react-icons/fa";
 
@@ -19,7 +19,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Facebook, Mail } from "lucide-react";
+import {
+  //  Facebook,
+  Mail,
+} from "lucide-react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Molimo unesite vase ime i prezime" }),
@@ -58,40 +61,42 @@ export default function Contact() {
   return (
     <div className="">
       <div className="container mx-auto pt-28 pb-16 px-6 md:px-8 md:py-32 space-y-12 md:space-y-24">
-        <h1 className="text-2xl md:text-5xl pl-2 md:px-32">Šlep Purić 032</h1>
+        <h1 className="text-2xl md:text-5xl pl-2 md:px-32">
+          Šlep Laki Beograd Zvezdara
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className=" mx-2 md:mx-20">
             <div className="space-y-3 md:space-y-10 text-lg md:text-2xl">
               <a
-                href="tel:+381659480700"
+                href="tel:+381601800700"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaPhone className="text-[20px] lg:text-[30px]" />
-                  +38165 948 0700
+                  +38160 1800 700
                 </button>
               </a>
               <a
-                href="viber://chat?number=%2B381659480700"
+                href="viber://chat?number=%2B381601800700"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <FaViber className="text-[28px] lg:text-[35px] p-1 bg-purple-600 text-white rounded-xl rounde" />{" "}
-                  +38165 948 0700
+                  +38160 1800 700
                 </button>
               </a>
 
               <a
-                href="mailto:sweetyivo@gmail.com"
+                href="mailto:lazarsekulic.76@gmail.com"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   <Mail className=" w-[28px] h-[28px]" />{" "}
-                  slepsluzbapuric032@gmail.com
+                  lazarsekulic.76@gmail.com
                 </button>
               </a>
-              <a
-                href="https://www.instagram.com/puricslepanje/"
+              {/* <a
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
@@ -99,11 +104,10 @@ export default function Contact() {
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
                   <FaInstagram className=" text-[28px] lg:text-[30px]" />
-                  puricslepanje
                 </button>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=61559770900567"
+              </a> */}
+              {/* <a
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
@@ -111,9 +115,8 @@ export default function Contact() {
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
                   <Facebook className=" text-[28px] lg:text-[30px]" />
-                  Šlep Purić 032
                 </button>
-              </a>
+              </a> */}
             </div>
             <div className="pl-4 md:pl-7 pt-4 lg:pt-12"></div>
           </div>
@@ -208,9 +211,12 @@ export default function Contact() {
           </div>
         </div>
         <iframe
-          width="600px"
-          height="450px"
-          src="https://www.planplus.rs/mapa/objekat/149456/16"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45304.743021997565!2d20.442935839412467!3d44.79005131651769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9c199ae419%3A0x1ce903f88e8cc37!2z0JzQuNC70L7RgNCw0LTQsCDQqNCw0L_Rh9Cw0L3QuNC90LAgNiwg0JHQtdC-0LPRgNCw0LQgMTEwNTA!5e0!3m2!1ssr!2srs!4v1750270796979!5m2!1ssr!2srs"
+          width="600"
+          height="450"
+          style={{ border: "0" }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
           className="w-full rounded-2xl"
         ></iframe>
       </div>

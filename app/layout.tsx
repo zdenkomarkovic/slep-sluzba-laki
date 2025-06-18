@@ -16,12 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Šlep služba Purić 032 Čačak",
+  title:
+    "Šlep služba Laki Beograd Zvezdara | Brza i pouzdana pomoć na putu 24/7",
   description:
-    "Šlep služba Purić 032 Čačak – brza i pouzdana vučna služba dostupna 24/7. Pozovite nas za siguran transport vozila!",
+    "Brza i povoljna šlep služba na Zvezdari. Dolazak za 10-15 minuta bilo gde u Beogradu. Dostupni 24/7. Pozovite odmah!",
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/tow-truck_18042919.png",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "šlep služba Čačak",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     "slep cacak",
   ],
   alternates: {
-    canonical: "https://www.slep-cacak.rs",
+    canonical: "https://www.",
   },
 };
 

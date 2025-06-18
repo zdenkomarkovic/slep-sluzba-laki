@@ -22,17 +22,24 @@ const Page = () => {
     <div className="py-20 md:py-24">
       <div className="container px-2 md:px-4 mx-auto">
         <h1 className="py-5 md:py-20 text-primary  text-3xl md:text-6xl text-center">
-          Šlep Purić - pouzdana i Brza Pomoć na Putu – 24/7 Dostupnost
+          Šlep Laki - 24/7 Dostupan za vas
         </h1>
-        <p className="text-xl md:text-3xl md:py-10 md:px-20">
-          Naša slep služba pruža{" "}
-          <span className="font-bold">siguran i brz prevoz vozila</span> u svim
-          situacijama – kvarovi, nezgode ili potreba za transportom. Bez obzira
-          na vreme ili lokaciju,{" "}
-          <span className="font-bold">uvek smo dostupni</span> , jer imamo{" "}
-          <span className="font-bold">više vozila u voznom parku</span> koja su
-          spremna za hitne intervencije.
-        </p>
+        <div className=" md:py-10 md:px-20 space-y-4">
+          <p className="text-xl md:text-3xl">
+            Naša šlep služba je najbrža i najpouzdanija u okolini Vukovog
+            spomenika na Zvezdari. Stižemo do vas za 10 do 15 minuta, bilo da
+            imate kvar, udes ili vam treba prevoz vozila.
+          </p>
+          <p className="text-xl md:text-3xl">
+            Obezbeđujemo siguran i pažljiv prevoz vašeg automobila, motora ili
+            druge vrste vozila. Naša oprema i stručnost garantuju da će vaše
+            vozilo biti prevezeno bezbedno i što je najvažnije, bez čekanja.
+          </p>
+          <p className="text-xl md:text-3xl">
+            Dostupni smo 24/7 i spremni da vam brzo i efikasno pomognemo u
+            svakom trenutku.
+          </p>
+        </div>
         {cards2Data.map((data, i) => {
           return (
             <div key={data.id} id={data.divName}>
@@ -44,15 +51,13 @@ const Page = () => {
                   i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 } gap-5 md:gap-32 items-center justify-between border-b pb-6 md:py-10`}
               >
-                <p className="text-xl md:text-2xl first-letter:pl-6">
-                  {data.text}
-                </p>
+                <p className="text-xl md:text-2xl">{data.text}</p>
                 <Image
                   src={data.image}
                   width={300}
                   height={300}
                   alt="slep puric"
-                  className="w-[90%] md:w-[300px] rounded-2xl object-cover aspect-square"
+                  className="w-[90%] md:w-[400px] rounded-2xl object-cover aspect-square"
                 />
               </div>
             </div>
@@ -60,11 +65,11 @@ const Page = () => {
         })}
       </div>
       <Image
-        src={"/black.jpg"}
+        src={"/IMG-2a0703ecf9baa51aa8e93a467dd9b97d-V.jpg"}
         width={1000}
         height={500}
         alt="slep cacak"
-        className=" w-full aspect-[3/2] object-cover"
+        className=" w-full aspect-[5/2] object-cover"
       />
     </div>
   );
