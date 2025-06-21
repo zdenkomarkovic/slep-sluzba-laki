@@ -25,16 +25,20 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   keywords: [
-    "šlep služba Čačak",
-    "vučna služba Čačak",
-    "šlep Purić 032",
-    "pomoć na putu Čačak",
-    " prevoz vozila Čačak",
-    "šlepanje automobila",
-    "slep cacak",
+    "slep sluzba",
+    "slep sluzba beograd",
+    "slep sluzba laki beograd",
+    "slep beograd",
+    "slep ",
+    "vucna sluzba",
+    "pomoć na putu",
+    "pomoc na putu beograd",
+    "prevoz vozila beograd",
+    "slepanje automobila",
+    "slep laki",
   ],
   alternates: {
-    canonical: "https://www.",
+    canonical: "https://www.slep-beograd.rs",
   },
 };
 
