@@ -11,10 +11,6 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 import { PiMoneyWavyBold } from "react-icons/pi";
 import { GoPeople } from "react-icons/go";
 import { PiMotorcycleFill } from "react-icons/pi";
-import image from "@/node_modules/next/image";
-import { link } from "fs";
-import { title } from "process";
-import { text } from "stream/consumers";
 
 export const navList = [
   {
